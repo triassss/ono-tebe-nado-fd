@@ -2,13 +2,14 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 90px 50px;
+  padding: 92px 50px;
 }
 
 .header__links-list {
   display: flex;
-  gap: 32px;
+  gap: 33px;
   list-style: circle;
+  padding-bottom: 6px;
 }
 
 .header__links-list-item_no-bullit {
@@ -18,6 +19,7 @@
 .header__link {
   font-size: 18px;
   font-weight: 400;
+  text-underline-offset: 3px;
 }
 
 .header__link_active {
@@ -45,8 +47,90 @@
 .header__address {
   justify-self: end;
   padding-right: 36px;
+  padding-bottom: 4px;
 }
 
 .address__links-list {
   list-style: none;
+}
+
+.cover {
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  z-index: -1;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+  inset: 0;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #fff;
+  gap: 21px;
+  padding-top: 164px;
+}
+
+.aligned-text {
+  z-index: 1;
+}
+
+.aligned-text_center {
+  text-align: center;
+  z-index: 1;
+}
+
+.aligned-text_right {
+  text-align: right;
+  z-index: 1;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 104px;
+}
+
+.cover__description-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 127%;
+  text-transform: uppercase;
+  color: #fff;
+  word-spacing: 19px;
+  z-index: 1;
+  padding-top: 14px;
+}
+
+.bet-button {
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  padding: 12px 32px 11px 31px;
+  z-index: 1; 
+  border: 1px solid #fff;
+  background: transparent;
 }
