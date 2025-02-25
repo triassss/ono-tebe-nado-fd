@@ -136,9 +136,7 @@
 }
 
 .lots {
-  padding-top: 180px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding: 180px 24px 120px;  
 }
 
 .lots__heading {
@@ -165,7 +163,6 @@
 }
 
 .card-link {
-  width: 100%;
   text-decoration: none;
 }
 
@@ -230,4 +227,89 @@
   font-size: 20px;
   color: #000;
   text-underline-offset: 4px;
+}
+.about {
+  padding: 35px 24px 0;
+  height: 100%;
+  min-width: 595px ;
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 25px;
+}
+
+.about__logo {
+  width: 100%;
+  max-width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-self: start center;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-top: 100px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  grid-column: 2 / 3;
+  padding-top: 7px;
+  padding-right: 5px;
+  gap: 24px;
+}
+
+.about__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 181px 50px 82px;
+}
+
+.footer__menu-list {
+  text-align: center;
+  list-style: none;
+}
+
+.footer__menu-link {
+  font-size: 18px;
+  text-underline-offset: 4px;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
 }
